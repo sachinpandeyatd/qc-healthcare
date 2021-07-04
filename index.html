@@ -18,7 +18,7 @@
     <!-- Bootstrap CSS file-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Font awesome css file-->
-    <link href="css/font-awesome.min.css" rel="stylesheet">       
+    <link href="css/font-awesome.min.css" rel="stylesheet">   
     <!-- Default Theme css file -->
     <link id="switcher" href="css/themes/default-theme.css" rel="stylesheet">   
     <!-- Slick slider css file -->
@@ -66,12 +66,14 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse">
               <ul id="top-menu" class="nav navbar-nav navbar-right main-nav">
-                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about-us.html">About Us</a></li>
                 <li><a href="#">Test</a></li>
-         <li><a href="#">Media</a></li>
-          <li><a href="contact.html">Contact</a></li>
-               
+                <li><a href="#">Media</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div>
+          </div>
         </nav>  
       </div>
       <!-- END MENU -->    
@@ -109,19 +111,59 @@
     </section>
     <!--=========== END SLIDER SECTION ================-->
 
+
     <!--=========== BEGIN Top Feature SECTION ================-->
     <section id="topFeature">
       <div class="row">
         <!-- Start Single Top Feature -->
-        <div class="col-lg-4 col-md-4">
+                <div class="col-lg-4 col-md-4">
           <div class="row">
             <div class="single-top-feature">
-              <span class="fa fa-flask"></span>
-              <h3>Emergency Care</h3>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              <span class="fa fa-hospital-o"></span>
+              <h3>Test Report</h3>
+              <p>Please enter your correct details to get your test report</p>
               <div class="readmore_area">
-                <a href="#" data-hover="Read More"><span>Read More</span></a>
+                <a data-toggle="modal" data-target="#myModal" href="#" data-hover="Appoinment"><span>Test Report</span></a>    
               </div>
+              <!-- start modal window -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      <h4 class="modal-title" id="myModalLabel">Test Report Details</h4>
+                    </div>
+                    <div class="modal-body">
+                      <div class="appointment-area">
+                        <form class="appointment-form">
+                          <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                              <label class="control-label">Mobile number<span class="required">*</span>
+                              </label>
+                              <input type="text" class="wp-form-control wpcf7-text" placeholder="Mobile Number">
+                            </div>
+                            <div class="col-md-6 col-sm-6">
+                              <label class="control-label">Booking ID<span class="required">*</span>
+                              </label>
+                              <input type="text" class="wp-form-control wpcf7-text" placeholder="Booking ID">  
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                              <label class="control-label">Capcha<span class="required">*</span>
+                              </label>
+                              <input type="text" class="wp-form-control wpcf7-text" placeholder="Capcha"> 
+                            </div> 
+                            <div class="col-md-6 col-sm-6">
+                              <button class="wpcf7-submit button--itzel" type="submit"><i class="button__icon fa fa-share"></i><span>Get Report</span></button>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>                    
+                  </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+              </div><!-- /.modal -->
             </div>
           </div>
         </div>
@@ -132,22 +174,8 @@
           <div class="row">
             <div class="single-top-feature opening-hours">
               <span class="fa fa-clock-o"></span>
-              <h3>Opening Hours</h3>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
-              <ul class="opening-table">
-                <li>
-                  <span>Monday - Friday</span>
-                  <div class="value">8.00 - 16.00</div>
-                </li>
-                <li>
-                  <span>Saturday</span>
-                  <div class="value">9.30 - 15.30</div>
-                </li>
-                <li>
-                  <span>Sunday</span>
-                  <div class="value">9.30 - 17.00</div>
-                </li>
-              </ul>              
+              <h3>Feedback</h3>
+              <p>Please consider giving us some valuable feedback, It helps us improve our services</p>              
             </div>
           </div>
         </div>
@@ -159,12 +187,12 @@
             <div class="single-top-feature">
               <span class="fa fa-hospital-o"></span>
               <h3>Appointment</h3>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+              <p>Please enter correct details to book your services.</p>
               <div class="readmore_area">
-                <a data-toggle="modal" data-target="#myModal" href="#" data-hover="Appoinment"><span>Appoinment</span></a>    
+                <a data-toggle="modal" data-target="#myModal1" href="#" data-hover="Appoinment"><span>Appoinment</span></a>    
               </div>
               <!-- start modal window -->
-              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -181,15 +209,13 @@
                               <input type="text" class="wp-form-control wpcf7-text" placeholder="Your name">
                             </div>
                             <div class="col-md-6 col-sm-6">
-                              <label class="control-label">Your Email <span class="required">*</span>
-                              </label>
+                              <label class="control-label">Your Email</label>
                               <input type="mail" class="wp-form-control wpcf7-email" placeholder="Email address">  
                             </div>
                           </div>
                           <div class="row">
                             <div class="col-md-6 col-sm-6">
-                              <label class="control-label">Your Birth <span class="required">*</span>
-                              </label>
+                              <label class="control-label">Your Birth</label>
                               <input type="text" class="wp-form-control wpcf7-text" placeholder="dd/mm/yy">
                             </div>
                             <div class="col-md-6 col-sm-6">
@@ -200,24 +226,17 @@
                           </div>
                           <div class="row">
                             <div class="col-md-6 col-sm-6">
-                              <label class="control-label">Appointment Date <span class="required">*</span>
-                              </label>
+                              <label class="control-label">Appointment Date</label>
                               <input type="text" class="wp-form-control wpcf7-text" placeholder="dd/mm/yy">
                             </div>
                             <div class="col-md-6 col-sm-6">
-                              <label class="control-label">Select Department <span class="required">*</span>
-                              </label>
+                              <label class="control-label">Select Package</label>
                               <select class="wp-form-control wpcf7-select">
-                                <option val="1">Dental</option>
-                                <option val="2">cardiology</option>
-                                <option val="3">neurology</option>
-                                <option val="4">Drugstore</option>
-                                <option val="5">x-ray</option>
-                                <option val="6">birth</option>
-                                <option val="7">general</option>
-                                <option val="8">testing</option>
-                                <option val="9">first-aid</option>
-                                <option val="10">immunizations</option><option val="11">pulmonary</option>
+                                <option val="1">Arpanam - 1</option>
+                                <option val="2">Arpanam - 2</option>
+                                <option val="3">Arpanam - 3</option>
+                                <option val="4">Arpanam - 4</option>
+                                <option val="5">Arpanam - 5</option>
                               </select> 
                             </div>
                           </div>         
@@ -246,7 +265,7 @@
             <div class="service-area">
               <!-- Start Service Title -->
               <div class="section-heading">
-                <h2>Our Services</h2>
+                <h2>Test by organs</h2>
                 <div class="line"></div>
               </div>
               <!-- Start Service Content -->
@@ -256,60 +275,60 @@
                   <div class="col-lg-4 col-md-4">
                     <div class="single-service">
                       <div class="service-icon">
-                        <span class="fa fa-stethoscope service-icon-effect"></span>  
+                        <img class="service-icon-effect" src="images/heart.png">
                       </div>                      
-                      <h3><a href="#">Cardio Monitoring</a></h3>
-                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                      <h3><a href="#">Heart</a></h3>
+                      <p>Listen your heart and make it healty</p>
                     </div>
                   </div>
                   <!-- Start Single Service -->
                   <div class="col-lg-4 col-md-4">
                     <div class="single-service">
                       <div class="service-icon">
-                        <span class="fa fa-heartbeat service-icon-effect"></span>  
+                        <img class="service-icon-effect" src="images/lungs.png">  
                       </div>                      
-                      <h3><a href="#">Rehabilitation Therapy</a></h3>
-                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                      <h3><a href="#">Lungs</a></h3>
+                      <p>Let not your lungs suck in sucking air</p>
                     </div>
                   </div>
                   <!-- Start Single Service -->
                   <div class="col-lg-4 col-md-4">
                     <div class="single-service">
                       <div class="service-icon">
-                        <span class="fa fa-h-square service-icon-effect"></span>  
+                        <img class="service-icon-effect" src="images/kidney.png">  
                       </div>                      
-                      <h3><a href="#">Medical Health Care</a></h3>
-                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                      <h3><a href="#">Kidneys</a></h3>
+                      <p>Make your kedneys healthy</p>
                     </div>
                   </div>
                   <!-- Start Single Service -->
                   <div class="col-lg-4 col-md-4">
                     <div class="single-service">
                       <div class="service-icon">
-                        <span class="fa fa-medkit service-icon-effect"></span>  
+                        <img class="service-icon-effect" src="images/thyroid.png">  
                       </div>                      
-                      <h3><a href="#">Background Checks</a></h3>
-                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                      <h3><a href="#">Thyroid</a></h3>
+                      <p>Make your thyroid healthy</p>
                     </div>
                   </div>
                   <!-- Start Single Service -->
                   <div class="col-lg-4 col-md-4">
                     <div class="single-service">
                       <div class="service-icon">
-                        <span class="fa fa-user-md service-icon-effect"></span>  
+                        <img class="service-icon-effect" src="images/liver.png">  
                       </div>                      
-                      <h3><a href="#">Special Doctor</a></h3>
-                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                      <h3><a href="#">Liver</a></h3>
+                      <p>Make your liver healthy</p>
                     </div>
                   </div>
                   <!-- Start Single Service -->
                   <div class="col-lg-4 col-md-4">
                     <div class="single-service">
                       <div class="service-icon">
-                        <span class="fa fa-ambulance service-icon-effect"></span>  
+                        <img class="service-icon-effect" src="images/vitamin-d.png">  
                       </div>                      
-                      <h3><a href="#">24 Hours Service</a></h3>
-                      <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                      <h3><a href="#">Vitamin-D</a></h3>
+                      <p>Make your body strong</p>
                     </div>
                   </div>
                 </div>
@@ -321,81 +340,108 @@
     </section>
     <!--=========== End Service SECTION ================-->
 
-    <!--=========== BEGAIN Why Choose Us SECTION ================-->
-    <section id="whychooseSection">
+
+    <!--=========== Start Our Packages ================-->
+    <section id="extraFeatures">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <div class="service-area">
-              <!-- Start Service Title -->
-              <div class="section-heading">
-                <h2>Why Choose Us</h2>
+    <div class="col-lg-12 col-md-12 col-sm-12">
+           <div class="how-works-area">
+             <div class="section-heading">
+                <h2>Our Packages</h2>
                 <div class="line"></div>
-              </div>              
-            </div>
-          </div>
-          <div class="col-lg-12 col-md-12">
-            <div class="row">
-              <div class="col-lg-5 col-md-6 col-sm-6 col-xs-12">
-                <div class="whyChoose-left">
-                  <div class="whychoose-slider">
-                    <div class="whychoose-singleslide">
-                      <img src="images/choose-us-img1.jpg" alt="img">
-                    </div>
-                    <div class="whychoose-singleslide">
-                      <img src="images/choose-us-img2.jpg" alt="img">
-                    </div>
-                    <div class="whychoose-singleslide">
-                      <img src="images/choose-us-img3.jpg" alt="img">
+              </div>
+              <div class="how-works">
+                <ul class="nav nav-tabs" id="myTab">
+                  <li class="active"><a href="#aparnam1" data-toggle="tab">Aparnam - 1</a></li>
+                  <li><a href="#aparnam2" data-toggle="tab">Aparnam - 2</a></li>
+                  <li><a href="#aparnam3" data-toggle="tab">Aparnam - 3</a></li>
+                  <li><a href="#aparnam4" data-toggle="tab">Aparnam - 4</a></li>
+                  <li><a href="#aparnam5" data-toggle="tab">Aparnam - 5</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                  <div class="tab-pane fade in active" id="aparnam1">
+                    <h3>Whole body care</h3>
+                    <div class="line" style="float: left; margin-bottom: 10px;"></div> <br>
+                    <ul class="nav">
+                      <li><span class="fa fa-check"></span>Blood Glucose Fastening</li>
+                      <li><span class="fa fa-check"></span>LIPID profile</li>
+                      <li><span class="fa fa-check"></span>HbA1C</li>
+                    </ul>
+                    <br>
+                    <span style="font-size: 20px;"><p><strike>&#8377 6500</strike></p></span><span style="font-size: 24px; font-weight: bold; color: darkred;"><p>&#8377 1999</p></span> 
+                    <div class="readmore_area">
+                      <a href="/arpanam.html?aparnam1" data-hover="I want it"><span>I want it</span></a>    
                     </div>
                   </div>
+                  <div class="tab-pane fade " id="aparnam2">
+                    <h3>Senior citizen care</h3>
+                    <div class="line" style="float: left; margin-bottom: 10px;"></div> <br>
+                    <ul class="nav">
+                      <li><span class="fa fa-check"></span>Blood Glucose Fastening</li>
+                      <li><span class="fa fa-check"></span>LIPID profile</li>
+                      <li><span class="fa fa-check"></span>HbA1C</li>
+                    </ul>
+                    <br>
+                    <span style="font-size: 20px;"><p><strike>&#8377 4000</strike></p></span><span style="font-size: 24px; font-weight: bold; color: darkred;"><p>&#8377 1299</p></span>  
+                    <div class="readmore_area">
+                      <a href="/arpanam.html?aparnam2" data-hover="I want it"><span>I want it</span></a>    
+                    </div>
+                  </div>
+                  <div class="tab-pane fade " id="aparnam3">
+                    <h3>Female care</h3>
+                    <div class="line" style="float: left; margin-bottom: 10px;"></div> <br>
+                    <ul class="nav">
+                      <li><span class="fa fa-check"></span>Blood Glucose Fastening</li>
+                      <li><span class="fa fa-check"></span>LIPID profile</li>
+                      <li><span class="fa fa-check"></span>HbA1C</li>
+                    </ul>
+                    <br>
+                    <span style="font-size: 20px;"><p><strike>&#8377 5800</strike></p></span><span style="font-size: 24px; font-weight: bold; color: darkred;"><p>&#8377 2499</p></span> 
+                    <div class="readmore_area">
+                      <a href="/arpanam.html?aparnam3" data-hover="I want it"><span>I want it</span></a>    
+                    </div> 
+                  </div>
+                  <div class="tab-pane fade " id="aparnam4">
+                    <h3>Heart care</h3>
+                    <div class="line" style="float: left; margin-bottom: 10px;"></div> <br>
+                    <ul class="nav">
+                      <li><span class="fa fa-check"></span>Blood Glucose Fastening</li>
+                      <li><span class="fa fa-check"></span>LIPID profile</li>
+                      <li><span class="fa fa-check"></span>HbA1C</li>
+                    </ul>
+                    <br>
+                    <span style="font-size: 20px;"><p><strike>&#8377 3800</strike></p></span><span style="font-size: 24px; font-weight: bold; color: darkred;"><p>&#8377 1999</p></span>  
+                    <div class="readmore_area">
+                      <a href="/arpanam.html?aparnam4" data-hover="I want it"><span>I want it</span></a>    
+                    </div>
+                  </div>
+                  <div class="tab-pane fade " id="aparnam5">
+                    <h3>Heart care</h3>
+                    <div class="line" style="float: left; margin-bottom: 10px;"></div> <br>
+                    <ul class="nav">
+                      <li><span class="fa fa-check"></span>Blood Glucose Fastening</li>
+                      <li><span class="fa fa-check"></span>LIPID profile</li>
+                      <li><span class="fa fa-check"></span>HbA1C</li>
+                    </ul>   
+                    <br>
+                    <span style="font-size: 20px;"><p><strike>&#8377 3800</strike></p></span><span style="font-size: 24px; font-weight: bold; color: darkred;"><p>&#8377 1999</p></span>  
+                    <div class="readmore_area">
+                      <a href="/arpanam.html?aparnam5" data-hover="I want it"><span>I want it</span></a>    
+                    </div>            
+                  </div>                  
                 </div>
               </div>
-              <div class="col-lg-7 col-md-6 col-sm-6 col-xs-12">
-                <div class="whyChoose-right">
-                  <div class="media">
-                    <div class="media-left">
-                      <a href="#" class="media-icon">
-                        <span class="fa fa-hospital-o"></span>
-                      </a>
-                    </div>
-                    <div class="media-body">
-                      <h4 class="media-heading">Great Infrastructure</h4>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>  
-                    </div>
-                  </div>
-                  <div class="media">
-                    <div class="media-left">
-                      <a href="#" class="media-icon">
-                        <span class="fa fa-user-md"></span>
-                      </a>
-                    </div>
-                    <div class="media-body">
-                      <h4 class="media-heading">Qualified Doctors</h4>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>  
-                    </div>
-                  </div>
-                  <div class="media">
-                    <div class="media-left">
-                      <a href="#" class="media-icon">
-                        <span class="fa fa-ambulance"></span>
-                      </a>
-                    </div>
-                    <div class="media-body">
-                      <h4 class="media-heading">Emergency Support</h4>
-                      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>  
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>          
-        </div>
+           </div>
+         </div>
+       </div>         
       </div>
     </section>
-    <!--=========== END Why Choose Us SECTION ================-->
+    <!--=========== End Packages SECTION ================-->
 
-    <!--=========== BEGAIN Counter SECTION ================-->
+
+        <!--=========== BEGAIN Counter SECTION ================-->
     <section id="counterSection">
       <div class="container">
         <div class="row">
@@ -404,31 +450,31 @@
               <div class="col-lg-3 col-md-3 col-sm-6">
                 <div class="counter-box">
                   <div class="counter-no counter">
-                    200
+                    3
                   </div>
-                  <div class="counter-label">Doctors</div>
+                  <div class="counter-label">Centers</div>
                 </div>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-6">
                  <div class="counter-box">
                   <div class="counter-no counter">
-                    300
+                    3000
                   </div>
-                  <div class="counter-label">Clinic Rooms</div>
+                  <div class="counter-label">Diagnostic Test</div>
                 </div>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-6">
                  <div class="counter-box">
                   <div class="counter-no counter">
-                    350
+                    950000
                   </div>
-                  <div class="counter-label">Awards</div>
+                  <div class="counter-label">Lab Test Done</div>
                 </div>
               </div>
               <div class="col-lg-3 col-md-3 col-sm-6">
                  <div class="counter-box">
                   <div class="counter-no counter">
-                    450
+                    3500
                   </div>
                   <div class="counter-label">Happy Patients</div>
                 </div>
@@ -440,209 +486,8 @@
     </section>
     <!--=========== End Counter SECTION ================-->
 
-    <!--=========== BEGAIN Doctors SECTION ================-->
-    <section id="meetDoctors">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <div class="meetDoctors-area">
-             <!-- Start Service Title -->
-              <div class="section-heading">
-                <h2>Meet Our Doctors</h2>
-                <div class="line"></div>
-              </div>
-              <div class="doctors-area">
-                <ul class="doctors-nav">
-                  <li>
-                    <div class="single-doctor">
-                      <a class="tdoctor" href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-                        <figure>
-                          <img src="images/doctor-1.jpg" />
-                          <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-                          <figcaption>
-                            <h2>Dr. Yvonne Cadiline</h2>
-                            <p>Pediatric Clinic</p>
-                            <button>View</button>             
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <div class="single-doctor-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="single-doctor">
-                      <div class="single-doctor">
-                      <a class="tdoctor" href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-                        <figure>
-                          <img src="images/doctor-2.jpg" />
-                          <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-                          <figcaption>
-                            <h2>DR. Jack Johnson</h2>
-                            <p>Rehabilitation Therapy</p>
-                            <button>View</button>             
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <div class="single-doctor-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                      </div>
-                    </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="single-doctor">
-                      <div class="single-doctor">
-                      <a class="tdoctor" href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-                        <figure>
-                          <img src="images/doctor-3.jpg" />
-                          <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-                          <figcaption>
-                            <h2>Dr. Vanessa Smouic</h2>
-                            <p>Cardiac Clinic</p>
-                            <button>View</button>             
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <div class="single-doctor-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                      </div>
-                    </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="single-doctor">
-                      <div class="single-doctor">
-                      <a class="tdoctor" href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-                        <figure>
-                          <img src="images/doctor-5.jpg" />
-                          <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-                          <figcaption>
-                            <h2>Dr. David Gresshoff</h2>
-                            <p>Laryngological Clinic</p>
-                            <button>View</button>             
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <div class="single-doctor-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                      </div>
-                    </div>
-                    </div>
-                  </li>
-                   <li>
-                    <div class="single-doctor">
-                      <a class="tdoctor" href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-                        <figure>
-                          <img src="images/doctor-1.jpg" />
-                          <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-                          <figcaption>
-                            <h2>Dr. Yvonne Cadiline</h2>
-                            <p>Pediatric Clinic</p>
-                            <button>View</button>             
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <div class="single-doctor-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="single-doctor">
-                      <div class="single-doctor">
-                      <a class="tdoctor" href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-                        <figure>
-                          <img src="images/doctor-2.jpg" />
-                          <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-                          <figcaption>
-                            <h2>DR. Jack Johnson</h2>
-                            <p>Rehabilitation Therapy</p>
-                            <button>View</button>             
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <div class="single-doctor-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                      </div>
-                    </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="single-doctor">
-                      <div class="single-doctor">
-                      <a class="tdoctor" href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-                        <figure>
-                          <img src="images/doctor-3.jpg" />
-                          <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-                          <figcaption>
-                            <h2>Dr. Vanessa Smouic</h2>
-                            <p>Cardiac Clinic</p>
-                            <button>View</button>             
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <div class="single-doctor-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                      </div>
-                    </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="single-doctor">
-                      <div class="single-doctor">
-                      <a class="tdoctor" href="#" data-path-hover="m 180,34.57627 -180,0 L 0,0 180,0 z">
-                        <figure>
-                          <img src="images/doctor-5.jpg" />
-                          <svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 180,160 0,218 0,0 180,0 z"/></svg>
-                          <figcaption>
-                            <h2>Dr. David Gresshoff</h2>
-                            <p>Laryngological Clinic</p>
-                            <button>View</button>             
-                          </figcaption>
-                        </figure>
-                      </a>
-                      <div class="single-doctor-social">
-                        <a href="#"><span class="fa fa-facebook"></span></a>
-                        <a href="#"><span class="fa fa-twitter"></span></a>
-                        <a href="#"><span class="fa fa-google-plus"></span></a>
-                        <a href="#"><span class="fa fa-linkedin"></span></a>
-                      </div>
-                    </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--=========== End Doctors SECTION ================-->
 
-    <!--=========== BEGAIN Testimonial SECTION ================-->
+        <!--=========== BEGAIN Testimonial SECTION ================-->
     <section id="testimonial">
       <div class="container">
         <div class="row">
@@ -658,30 +503,55 @@
                   <li>
                     <div class="single-testimonial">
                       <div class="testimonial-img">
-                        <img src="images/patients-3.jpg" alt="img">
+                        <img src="images/smiley.png" alt="img">
                       </div>
                       <div class="testimonial-cotent">
-                        <p class="testimonial-parg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.There are many variations of passages of Lorem Ipsum available.</p>
+                        <p class="testimonial-parg">I would like to appreciate all of you, you guys are really professional in medical services. Your sample collector reached as given by time and report sent on my email in same day evening. Great job, I'll recommend to my all colleague. Please provide them at-least 10 percent discount.</p>
+                        <h4>-Amit Kumar</h4>
                       </div>
                     </div>
                   </li> 
                   <li>
                     <div class="single-testimonial">
                       <div class="testimonial-img">
-                        <img src="images/patients-1.jpg" alt="img">
+                        <img src="images/smiley.png" alt="img">
                       </div>
                       <div class="testimonial-cotent">
-                        <p class="testimonial-parg">There are many variations of passages of Lorem Ipsum available.Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                        <p class="testimonial-parg">Reporting of tests is well in time and the lab follows standard procedures for ommission of errors in clinical patholgy test</p>
+                        <h4>-Rajiv Srivastava</h4>
                       </div>
                     </div>
                   </li> 
                   <li>
                     <div class="single-testimonial">
                       <div class="testimonial-img">
-                        <img src="images/patients-2.jpg" alt="img">
+                        <img src="images/smiley.png" alt="img">
                       </div>
                       <div class="testimonial-cotent">
-                        <p class="testimonial-parg">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.There are many variations of passages of Lorem Ipsum available.</p>
+                        <p class="testimonial-parg">Best pathology in Lucknow,  I had taken the services many times,  and got every time satisfaction. Good work QC!</p>
+                        <h4>-Anoop Bajpai</h4>
+                      </div>
+                    </div>
+                  </li>    
+                  <li>
+                    <div class="single-testimonial">
+                      <div class="testimonial-img">
+                        <img src="images/smiley.png" alt="img">
+                      </div>
+                      <div class="testimonial-cotent">
+                        <p class="testimonial-parg">Perfect service and timely my blood collection, it was really a great experience by quality commital, great job.😊</p>
+                        <h4>-Sheikh Shabana</h4>
+                      </div>
+                    </div>
+                  </li>    
+                  <li>
+                    <div class="single-testimonial">
+                      <div class="testimonial-img">
+                        <img src="images/smiley.png" alt="img">
+                      </div>
+                      <div class="testimonial-cotent">
+                        <p class="testimonial-parg">Thank you so much guys , best services I got</p>
+                        <h4>-Dr. Javed Hasan</h4>
                       </div>
                     </div>
                   </li>                 
@@ -694,127 +564,16 @@
     </section>
     <!--=========== End Testimonial SECTION ================-->
 
-    <!--=========== BEGAIN Home Blog SECTION ================-->
-    <section id="homeBLog">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-md-12">
-            <div class="homBlog-area">
-             <!-- Start Service Title -->
-              <div class="section-heading">
-                <h2>News From Blog</h2>
-                <div class="line"></div>
-              </div> 
-              <!-- Start Home Blog Content -->
-              <div class="homeBlog-content">
-                <div class="row">
-                  <!-- Start Single Blog -->
-                  <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="single-Blog">
-                      <div class="single-blog-left">
-                        <ul class="blog-comments-box">
-                          <li>May <h2>10</h2>2015</li>
-                          <li><span class="fa fa-eye"></span>1523</li>
-                          <li><a href="#"><span class="fa fa-comments"></span>5</a></li>
-                        </ul>
-                      </div>
-                      <div class="single-blog-right">
-                        <div class="blog-img">
-                          <figure class="blog-figure">
-                           <a href="#"><img src="images/choose-us-img3.jpg" alt="img"></a>
-                            <span class="image-effect"></span>
-                          </figure>
-                        </div>
-                        <div class="blog-author">
-                          <ul>
-                            <li>By <a href="#">Dr. Smith</a></li>
-                            <li>In <a href="#">Dental</a></li>
-                          </ul>
-                        </div>
-                        <div class="blog-content">
-                          <h2>Latest Trend Of Medical Dental Department</h2>
-                          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                          <div class="readmore_area">
-                            <a href="#" data-hover="Read More"><span>Read More</span></a>                
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                   <!-- Start Single Blog -->
-                  <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="single-Blog">
-                      <div class="single-blog-left">
-                        <ul class="blog-comments-box">
-                          <li>May <h2>10</h2>2015</li>
-                          <li><span class="fa fa-eye"></span>1523</li>
-                          <li><a href="#"><span class="fa fa-comments"></span>5</a></li>
-                        </ul>
-                      </div>
-                      <div class="single-blog-right">
-                         <div class="blog-img">
-                          <figure class="blog-figure">
-                           <a href="#"><img src="images/choose-us-img3.jpg" alt="img"></a>
-                            <span class="image-effect"></span>
-                          </figure>
-                        </div>
-                        <div class="blog-author">
-                          <ul>
-                            <li>By <a href="#">Dr. Smith</a></li>
-                            <li>In <a href="#">Dental</a></li>
-                          </ul>
-                        </div>
-                        <div class="blog-content">
-                          <h2>Latest Trend Of Medical Dental Department</h2>
-                          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                          <div class="readmore_area">
-                            <a href="#" data-hover="Read More"><span>Read More</span></a>                
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                   <!-- Start Single Blog -->
-                  <div class="col-lg-4 col-md-4 col-sm-4">
-                    <div class="single-Blog">
-                      <div class="single-blog-left">
-                        <ul class="blog-comments-box">
-                          <li>May <h2>10</h2>2015</li>
-                          <li><span class="fa fa-eye"></span>1523</li>
-                          <li><a href="#"><span class="fa fa-comments"></span>5</a></li>
-                        </ul>
-                      </div>
-                      <div class="single-blog-right">
-                         <div class="blog-img">
-                          <figure class="blog-figure">
-                           <a href="#"><img src="images/choose-us-img3.jpg" alt="img"></a>
-                            <span class="image-effect"></span>
-                          </figure>
-                        </div>
-                        <div class="blog-author">
-                          <ul>
-                            <li>By <a href="#">Dr. Smith</a></li>
-                            <li>In <a href="#">Dental</a></li>
-                          </ul>
-                        </div>
-                        <div class="blog-content">
-                          <h2>Latest Trend Of Medical Dental Department</h2>
-                          <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
-                          <div class="readmore_area">
-                            <a href="#" data-hover="Read More"><span>Read More</span></a>                
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>             
-            </div>
-          </div>
-        </div>
+    <div class="container">
+      <div class="section-heading" style="margin-top: 50px">
+        <h2>QC Steps</h2>
+        <div class="line"></div>
       </div>
-    </section>
-    <!--=========== End Home Blog SECTION ================-->
+      <div  style="margin: 50px 0 50px 0;" class="row">
+        <img src="images/qc-steps.jpg">
+      </div>
+    </div>
+    
 
     <!--=========== Start Footer SECTION ================-->
     <footer id="footer">

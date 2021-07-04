@@ -2253,10 +2253,9 @@ width: 100%;
 	float: left;
 	display: inline;
 	width: 100%;
-	 padding: 0 0 0 12px;
+	padding: 0 0 0 12px;
 }
 .how-works{
-	float: left;
 	display: inline;
 	width: 100%;
 }
@@ -2266,14 +2265,15 @@ width: 100%;
 }
 .nav-tabs li{
 	display: inline-block;
-	float: none;
+	margin: auto;
+	margin-bottom: 10px;
 }
 .nav-tabs > li > a {
   border: 1px solid transparent;
   border-radius: 0;
   color: #fff;
   display: inline-block;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   line-height: 1.42857;
   padding: 10px 18px;
@@ -2282,7 +2282,15 @@ width: 100%;
 	opacity: 0.8;
 }
 .tab-content > .tab-pane {
-  padding: 20px 0px ;
+  padding: 20px 0;
+  font-size: 18px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+.tab-content > .tab-pane h3{
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: bold;
 }
 
 /*--------------------*/
@@ -2626,6 +2634,17 @@ a.gallery-iteam:hover .image-effect::before {
   margin: 0;
   font-size: 30px;  
 }
+#myModal1 .modal-content {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 0;
+  float: left;
+  width: 100%;
+}
+#myModal1 .modal-title {
+  line-height: 1.42857;
+  margin: 0;
+  font-size: 30px;  
+}
 .modal-header{
 	display: inline;
 	float: left;
@@ -2815,6 +2834,7 @@ a.gallery-iteam:hover .image-effect::before {
 .nav-tabs > li > a {font-size: 10px;padding: 3px;}
 .custom-panel .panel-heading a {font-size: 16px;}
 #myModal .modal-title {font-size: 25px;}
+#myModal1 .modal-title {font-size: 25px;}
 .post-author .news-img {margin-right: 0px;width: 45px;height: 45px;}
 .author-name {font-size: 13px;margin-bottom: 5px;display: block;}
 .post-author p {font-size: 12px;line-height: 18px;}
@@ -2835,6 +2855,7 @@ a.gallery-iteam:hover .image-effect::before {
 .blog-breadcrumbs-right .breadcrumb > .active {font-size: 12px;}
 .custom-panel .panel-heading a {font-size: 14px;}
 #myModal .modal-title {font-size: 22px;}
+#myModal1 .modal-title {font-size: 22px;}
 #respond input[type="text"], #respond input[type="email"], #respond input[type="url"] {
   width: 100%;
 }
