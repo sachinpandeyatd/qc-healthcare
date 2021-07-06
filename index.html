@@ -17,6 +17,8 @@
     ================================================== -->       
     <!-- Bootstrap CSS file-->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate.css file-->
+    <link rel="stylesheet" href="animate.css/animate.css">
     <!-- Font awesome css file-->
     <link href="css/font-awesome.min.css" rel="stylesheet">   
     <!-- Default Theme css file -->
@@ -71,7 +73,6 @@
                 <li><a href="#">Test</a></li>
                 <li><a href="#">Media</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
               </ul>
             </div>
           </div>
@@ -117,9 +118,9 @@
     <section id="topFeature">
       <div class="row">
         <!-- Start Single Top Feature -->
-                <div class="col-lg-4 col-md-4">
+        <div class="col-lg-4 col-md-4">
           <div class="row">
-            <div class="single-top-feature">
+            <div data-animate="fadeInDown" class="single-top-feature">
               <span class="fa fa-hospital-o"></span>
               <h3>Test Report</h3>
               <p>Please enter your correct details to get your test report</p>
@@ -266,7 +267,7 @@
             <div class="service-area">
               <!-- Start Service Title -->
               <div class="section-heading">
-                <h2>Test by organs</h2>
+                <h2 data-animate="fadeInUp" id="foo">Test by organs</h2>
                 <div class="line"></div>
               </div>
               <!-- Start Service Content -->
@@ -648,7 +649,9 @@
   <!-- End Footer -->
 
     <!-- jQuery Library  -->
-    <script src="js/jquery.js"></script>    
+    <script src="js/jquery.js"></script>  
+    <script type="text/javascript" src="js/animate-plus.js"></script>
+    <script type="text/javascript" src="js/animate-plus.min.js"></script>  
     <!-- Bootstrap default js -->
     <script src="js/bootstrap.min.js"></script>
     <!-- slick slider -->
@@ -664,6 +667,7 @@
     <script src='js/photoswipe.min.js'></script>
     <script src='js/photoswipe-ui-default.min.js'></script>    
     <script src="js/photoswipe-gallery.js"></script>
+    <script src="waypoints/lib/jquery.waypoints.min.js"></script>
 
     <!-- Custom JS -->
     <script src="js/custom.js"></script>
