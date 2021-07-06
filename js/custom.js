@@ -6,11 +6,10 @@
 	3. TOP SLIDER
 	4. WHY CHOOSE SLIER(SLICK SLIDER)
 	5. COUNTER
-	6. DOCTORS TEAM SLIDER(SLICK SLIDER)
-	7. TESTIMONIAL SLIDER(SLICK SLIDER)
-	8. PRELOADER
-	9. SCROLL TOP BUTTON
-	10. ACCORDION	 	
+	6. TESTIMONIAL SLIDER(SLICK SLIDER)
+	7. PRELOADER
+	8. SCROLL TOP BUTTON
+	9. ACCORDION	 	
 	
 **/
 
@@ -82,45 +81,6 @@ jQuery(function($){
             time: 1000
         });
 
-
-	/* ----------------------------------------------------------- */
-	/*  6. DOCTORS TEAM SLIDER
-	/* ----------------------------------------------------------- */
-
-		$('.doctors-nav').slick({
-		  dots: false,
-		  infinite: true,
-		  speed: 300,
-		  slide: 'li',
-		  // autoplay: true,
-		  slidesToShow: 4,
-		  slidesToScroll: 4,
-		  responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow: 3,
-		        slidesToScroll: 3,
-		        infinite: true,
-		        dots: true
-		      }
-		    },
-		    {
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    }
-		  ]
-		}); 
 
 	/* ----------------------------------------------------------- */
 	/*  7. Testimonial Slider 
